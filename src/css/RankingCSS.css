@@ -1,0 +1,106 @@
+main {
+    .back {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: fixed;
+    }
+
+    .flexContainer {
+        display: flex;
+        justify-content: center;
+    }
+
+    .mainContent {
+        position: relative;
+
+        p {
+            text-align: center;
+            color: #FFFFFF;
+            margin-bottom: 300px;
+        }
+    }
+
+    .rankings {
+        margin-top: 300px;
+    }
+
+    .rankingRow {
+        display: flex;
+        flex-wrap: wrap;
+
+        .ranking {
+            background-color: #00000052;
+            margin: 20px;
+            width: 400px;
+
+            .title {
+                background-color: #00000052;
+                text-align: center;
+
+                p {
+                    color: #FFFFFF;
+                    margin: 0;
+                    padding: 10px;
+                    font-size: 25px;
+                }
+            }
+
+            .data {
+                border-bottom: solid 1px #FFFFFF;
+                display: flex;
+                margin-inline: 5px;
+                align-items: center;
+                justify-content: space-between;
+                
+                .profile {
+                    display: flex;
+                    align-items: center;
+                    p {
+                        color: #FFFFFF;
+                        margin: 0;
+                        padding: 15px;
+                        font-size: 20px;
+                    }
+                    img {
+                        width: 30px;
+                    }
+                }
+
+                .rps {
+                    display: flex;
+                    align-items: center;
+
+                    p {
+                        color: #FFFFFF;
+                        font-size: 17px;
+                        padding-inline: 7px;
+                        margin: 0;
+                    }
+                }
+            }
+            .data:last-child {
+                border: none;
+            }
+        }
+    }
+}
+@media screen and (min-width:440px) {
+    .rankingRow {
+        max-width: 440px;
+    }
+    
+}
+@media screen and (min-width:900px) {
+    .rankingRow {
+        max-width: 880px;
+    }
+    
+}
+@media screen and (min-width:1340px) {
+    .rankingRow {
+        max-width: 1320px;
+    }
+    
+}

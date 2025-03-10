@@ -1,0 +1,165 @@
+.MatchCard-Base {
+    display: flex;
+    justify-content: center;
+}
+
+.MainContainer h1 {
+    text-align: center;
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+
+.MatchCard {
+    display: flex;
+    padding-block: 20px;
+    border-bottom: solid 1px #b8b8b8;
+}
+
+.MatchCard img {
+    width: 150px;
+    height: 150px;
+}
+
+.MatchCard h1 {
+    font-size: 40px;
+    font-weight: lighter;
+}
+
+.MatchCard h2 {
+    margin: 0;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.MatchCard a {
+    margin: 0;
+    padding: 10px;
+    font-size: 25px;
+    color: rgb(96, 107, 255);
+    font-weight: lighter;
+    text-decoration: none;
+}
+
+.MatchCard article {
+    display: grid;
+    align-content: center;
+    padding-inline: 30px;
+}
+
+.WinnerCard {
+    display: flex;
+}
+
+.LoserCard {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.LoserCard h2 {
+    text-align: right;
+}
+
+.LoserCard a {
+    text-align: right;
+}
+
+.WinnerInfo-Base {
+    display: flex;
+    justify-content: center;
+    margin-block: 50px;
+}
+
+.WinnerContentBox {
+    border: solid 1px #b8b8b8;
+    border-radius: 10px;
+    justify-items: center;
+    margin-inline: 5px;
+    display: grid;
+}
+
+.WinnerContentBox h1 {
+    margin-block: 10px;
+    padding-inline: 10px;
+}
+
+.WinnerContentBox img {
+    width: 200px;
+    height: 200px;
+}
+
+.WinnerInfo {
+    margin-inline: 100px;
+}
+
+.WinnerInfo h2 {
+    margin-block: 5px;
+    padding-inline: 10px;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.Inventory-Base {
+    display: flex;
+    justify-content: center;
+    margin-block: 50px;
+}
+
+.InventoryInfoContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.InventoryInfoContainer img {
+    width: 80px;
+    height: 80px;
+}
+
+.InventoryInfo {
+    display: grid;
+    align-content: center;
+}
+
+.InventoryInfo h1 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.InventoryInfo img {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 15px;
+    height: 15px;
+}
+
+.Health, .FoodLevel {
+    display: flex;
+}
+
+.Inventory {
+    display: grid;
+    margin: 10px;
+    padding: 10px;
+    border: double 4px #b8b8b8;
+}
+
+.Raw {
+    display: flex;
+}
+
+.Raw img {
+    width: 48px;
+    height: 48px;
+    border: solid 1px #b8b8b8;
+}
+
+.InventoryContainer {
+    display: grid;
+    margin: 5px;
+}
+
+.InventoryHotbar {
+    margin: 5px;
+}

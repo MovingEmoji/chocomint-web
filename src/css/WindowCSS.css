@@ -1,0 +1,23 @@
+.windowBox {
+    display: grid;
+    background-color: #FFFFFF;
+    padding: 2px 0 0 0;
+    border-radius: 12px;
+    box-shadow: 0px 0px 100px #000000;
+    .windowHeader {
+        display: flex;
+        margin-inline: 5px;
+        .circle1 {
+            width: 15px;
+            height: 15px;
+            background-color: #666666;
+            margin-block: 3px;
+            margin-inline: 3px;
+            border-radius: 50px;
+        }
+    }
+    img {
+        width: 100%;
+        border-radius: 0 0 12px 12px;
+    }
+}

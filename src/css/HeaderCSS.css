@@ -1,0 +1,42 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #00000052;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    animation: slideinTop 1s;
+}
+
+header h1 {
+    margin-block: auto;
+    padding-inline: 20px;
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-weight: lighter;
+    color: #ffffff;
+}
+
+header li {
+    list-style: none;
+    float: left;
+    padding: 20px;
+}
+
+header a {
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: lighter;
+    color: #ffffff;
+}
+
+@keyframes slideinTop {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
