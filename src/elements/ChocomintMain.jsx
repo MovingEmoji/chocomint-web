@@ -2,6 +2,7 @@ import axios from 'axios';
 import '../css/MainCSS.css'
 import Header from "./Header";
 import Home from './Home';
+import Matches from './Matches';
 import MatchPage from './MatchPage';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Footer from './Footer';
@@ -14,6 +15,7 @@ function ChocomintMain() {
             <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='/ranking' element={<Ranking />} />
+                <Route path='/matches' element={<Matches />} />
                 <Route path='/match/:id' element={<MatchPage />} />
             </Routes>
             <Footer />

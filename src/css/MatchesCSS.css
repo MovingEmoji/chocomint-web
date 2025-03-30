@@ -14,6 +14,7 @@ main {
 
     .mainContent {
         position: relative;
+        
 
         p {
             text-align: center;
@@ -22,19 +23,18 @@ main {
         }
     }
 
-    .rankings {
+    .matches {
         margin-top: 300px;
-        animation: slideinBottom 2s;
     }
 
-    .rankingRow {
+    .matchRow {
         display: flex;
         flex-wrap: wrap;
 
-        .ranking {
+        .match {
             background-color: #00000052;
             margin: 20px;
-            width: 400px;
+            width: 500px;
 
             .title {
                 background-color: #00000052;
@@ -53,11 +53,12 @@ main {
                 display: flex;
                 margin-inline: 5px;
                 align-items: center;
-                justify-content: space-between;
                 
                 .profile {
                     display: flex;
                     align-items: center;
+                    width: 100%;
+                    justify-content: center;
                     p {
                         color: #FFFFFF;
                         margin: 0;
@@ -69,39 +70,43 @@ main {
                     }
                 }
 
-                .rps {
-                    display: flex;
-                    align-items: center;
-
-                    p {
-                        color: #FFFFFF;
-                        font-size: 17px;
-                        padding-inline: 7px;
-                        margin: 0;
-                    }
+                p {
+                    color: #FFFFFF;
+                    margin: 0;
+                    padding: 15px;
+                    font-size: 20px;
                 }
             }
             .data:last-child {
                 border: none;
             }
+
+            .data:hover {
+                background-color: #00000052;
+            }
+
+            .data:active {
+                background-color: #00000075;
+            }
         }
     }
 }
-@media screen and (min-width:440px) {
-    .rankingRow {
-        max-width: 440px;
+@media screen and (min-width:540px) {
+    .matchRow {
+        max-width: 540px;
     }
     
 }
-@media screen and (min-width:900px) {
-    .rankingRow {
-        max-width: 880px;
+
+@media screen and (min-width:560px) {
+    .matchRow {
+        max-width: 540px;
     }
     
 }
-@media screen and (min-width:1340px) {
-    .rankingRow {
-        max-width: 1320px;
+@media screen and (min-width:1100px) {
+    .matchRow {
+        max-width: 1080px;
     }
     
 }

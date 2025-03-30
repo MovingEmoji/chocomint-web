@@ -6,6 +6,7 @@ function Header() {
             <nav>
                 <li><a href="/">HOME</a></li>
                 <li><a href="/ranking">RANKING</a></li>
+                <li><a href="/matches">RECENTMATCH</a></li>
             </nav>
         </header>
     );

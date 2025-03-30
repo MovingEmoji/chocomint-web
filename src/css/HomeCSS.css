@@ -25,13 +25,13 @@ main {
 
     .mainContent {
         position: relative;
-        animation: slideinBottom 2s;
 
         .mainWindows {
             margin-top: 300px;
             position: relative;
             width: 900px;
             height: 550px;
+            animation: slideinBottom 2s;
         }
 
         .firstWindow {

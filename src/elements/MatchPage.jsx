@@ -1,7 +1,23 @@
+import { useParams } from 'react-router-dom';
 import '../css/MatchPageCSS.css'
+import { useEffect } from 'react';
+import { axiosInstance } from './ChocomintMain';
 
 function MatchPage() {
-    // let {id} = useParams();
+    const {id} = useParams();
+    useEffect(() => {
+        axiosInstance.get("/match/info/" + id)
+            .then(res => {
+                console.log(res.data);
+            })
+    }, [])
+
+
+    return (
+        <main>
+
+        </main>
+    )
     // const [infos, setJson] = useState([]);
     // const [inventories, setInventories] = useState([]);
     // useEffect(() => {
